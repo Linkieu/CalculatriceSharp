@@ -19,7 +19,8 @@
 			VerticalAlignment="Top"
 			Margin="49,81.3999999999999,0,0"
 			Width="55"
-			Height="58" />
+			Height="58"
+			Click="Chiffre_Click" />
 		<Button
 			x:Name="bouton8"
 			FontWeight="Bold"
@@ -31,7 +32,8 @@
 			VerticalAlignment="Top"
 			Margin="112,81.3999999999999,0,0"
 			Width="55"
-			Height="58" />
+			Height="58"
+			Click="Chiffre_Click" />
 		<Button
 			RenderTransformOrigin="0.5,0.5139"
 			x:Name="bouton9"
@@ -44,7 +46,8 @@
 			VerticalAlignment="Top"
 			Margin="0,81.3999999999999,54,0"
 			Width="55"
-			Height="58" />
+			Height="58"
+			Click="Chiffre_Click" />
 		<Button
 			x:Name="bouton6"
 			Content="6"
@@ -56,7 +59,8 @@
 			VerticalAlignment="Top"
 			HorizontalAlignment="Right"
 			Grid.Row="0"
-			Grid.Column="0" />
+			Grid.Column="0"
+			Click="Chiffre_Click" />
 		<Button
 			x:Name="bouton5"
 			FontWeight="Bold"
@@ -68,7 +72,8 @@
 			VerticalAlignment="Top"
 			HorizontalAlignment="Left"
 			Grid.Row="0"
-			Grid.Column="0" />
+			Grid.Column="0"
+			Click="Chiffre_Click" />
 		<Button
 			x:Name="bouton4"
 			Content="4"
@@ -80,7 +85,8 @@
 			VerticalAlignment="Top"
 			Margin="49,147.4,0,0"
 			Width="55"
-			Height="58" />
+			Height="58"
+			Click="Chiffre_Click" />
 		<Button
 			x:Name="bouton3"
 			Content="3"
@@ -92,7 +98,8 @@
 			VerticalAlignment="Top"
 			Margin="0,213.4,54,0"
 			Width="55"
-			Height="58" />
+			Height="58"
+			Click="Chiffre_Click" />
 		<Button
 			x:Name="bouton2"
 			Content="2"
@@ -104,7 +111,8 @@
 			VerticalAlignment="Top"
 			Margin="0,213.4,117,0"
 			Width="55"
-			Height="58" />
+			Height="58"
+			Click="Chiffre_Click" />
 		<Button
 			x:Name="bouton1"
 			Content="1"
@@ -116,9 +124,10 @@
 			VerticalAlignment="Top"
 			Margin="49,213.4,0,0"
 			Width="55"
-			Height="58" />
+			Height="58"
+			Click="Chiffre_Click" />
 		<Button
-			x:Name="bouton2_Copy"
+			x:Name="bouton0"
 			FontWeight="Bold"
 			FontSize="30"
 			Content="0"
@@ -128,7 +137,8 @@
 			VerticalAlignment="Top"
 			Margin="0,280.4,54,0"
 			Width="181"
-			Height="58" />
+			Height="58"
+			Click="Chiffre_Click" />
 		<TextBlock
 			x:Name="numberDisplay"
 			FontSize="26"
@@ -138,7 +148,7 @@
 			TextTrimming="WordEllipsis"
 			Foreground="#FF000000"
 			Background="#FFB9D1EA"
-			Text="1234567"
+			Text="0"
 			Grid.Column="0"
 			Grid.Row="0"
 			HorizontalAlignment="Left"
@@ -146,5 +156,78 @@
 			Margin="25,23,0,295"
 			Width="230"
 			Height="50"></TextBlock>
+		<Button
+			x:Name="boutonPlus"
+			Content="+"
+			FontWeight="Bold"
+			FontSize="25"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="10,81,0,0"
+			Width="31"
+			Height="37" />
+		<Button
+			x:Name="boutonMoins"
+			FontWeight="Bold"
+			FontSize="25"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="10,126,0,0"
+			Width="31"
+			Height="37"
+			Content="-" />
+		<Button
+			x:Name="boutonFois"
+			FontWeight="Bold"
+			FontSize="25"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="10,168,0,0"
+			Width="31"
+			Height="37"
+			Content="x" />
+		<Button
+			x:Name="boutonDiviser"
+			FontWeight="Bold"
+			FontSize="25"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="10,213,0,0"
+			Width="31"
+			Height="37"
+			Content="/" />
+		<Button
+			x:Name="boutonReset"
+			FontWeight="Bold"
+			FontSize="25"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Bottom"
+			Margin="238,0,0,21"
+			Width="31"
+			Height="67"
+			Content="C"
+			Click="Reset_Click"/>
+		<Button
+			x:Name="boutonValider"
+			FontWeight="Bold"
+			FontSize="25"
+			Content="-&gt;"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Bottom"
+			Margin="10,0,0,21"
+			Width="31"
+			Height="67" />
 	</Grid>
 </Window>
